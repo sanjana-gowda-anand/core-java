@@ -1,27 +1,22 @@
 class MobileRunner {
+    public static void main(String[] args) 
+	{
 
-    public static void main(String[] args) {
+ Mobile m1=new Mobile("Samsung","Galaxy S21",70000,128);
+ m1.show();
+ Mobile m2=new Mobile("Apple","iPhone 14",80000,128);
+ m2.show();
+        Mobile m3=new Mobile("OnePlus","9 Pro",65000,256);
+		m3.show();
+        Mobile m4=new Mobile("Xiaomi","Redmi Note 12",20000,128);
+		m4.show();
+        Mobile m5=new Mobile("Realme","Narzo 60",18000,128);
+		m5.show();
+        Mobile m6=new Mobile("Vivo","V27",30000,128);
+		m6.show();
+        Mobile m7=new Mobile("Oppo","F21 Pro",25000,128);
+		m7.show();
 
-        
-        Mobile.brand = "Samsung";
-        Mobile.country = "India";
-
-        
-        Mobile m1 = new Mobile();
-        m1.model = "Galaxy A9+";
-        m1.price = 20000;
-		
-		Mobile m2 = new Mobile();
-        m2.model = "apple";
-        m2.price = 90000;
-
-
-        
-        System.out.println("Brand: " + Mobile.brand);
-        System.out.println("Country: " + Mobile.country);
-        System.out.println("Model: " + m1.model);
-        System.out.println("Price: " + m1.price);
-		System.out.println("Model: " + m2.model);
-        System.out.println("Price: " + m2.price);
+       
     }
 }
