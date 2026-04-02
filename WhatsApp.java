@@ -1,17 +1,25 @@
 class WhatsApp {
-
     String userName;
     long phoneNumber;
     boolean isOnline;
     int chatsCount;
-    double rating;
 
-    public WhatsApp(String p1, long p2, boolean p3, int p4, double p5) {
-        userName = p1;
-        phoneNumber = p2;
-        isOnline = p3;
-        chatsCount = p4;
-        rating = p5;
+
+    public WhatsApp(String userName, long phoneNumber, boolean isOnline, int chatsCount) {
+        this.userName = userName;
+        this.phoneNumber =phoneNumber ;
+        this.isOnline = isOnline;
+        this.chatsCount = chatsCount;
+    }
+	
+	public WhatsApp(String userName , long phoneNumber, boolean isOnline) {
+       this.userName=userName ;
+        this.phoneNumber=phoneNumber ;
+        this.isOnline=isOnline ;
+    }
+	
+	public WhatsApp(String userName) {
+        this.userName =userName;
     }
 
     public void show() {
@@ -19,6 +27,5 @@ class WhatsApp {
         System.out.println(phoneNumber);
         System.out.println(isOnline);
         System.out.println(chatsCount);
-        System.out.println(rating);
     }
 }
