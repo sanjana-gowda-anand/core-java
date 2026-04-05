@@ -1,25 +1,43 @@
 class Meesho {
-    String productName;
-    int orderId;
-    double price;
-    String category;
-    String deliveryAddress;
 
-    public Meesho(String productName,int orderId, double price,String category,String deliveryAddress) 
-	{
-        this.productName=productName;
-        this.orderId=orderId;
-        this.price=price;
-        this.category=category;
-        this.deliveryAddress=deliveryAddress;
+    String productName;
+    int productId;
+    double price;
+    int quantity;
+
+    public Flipkart() 
+    {
+        this("Dress", 2001, 1499.0);
+        System.out.println("Details 1st");
     }
 
-    public void show()
-	{
-        System.out.println(productName);
-        System.out.println(orderId);
-        System.out.println(price);
-        System.out.println(category);
-        System.out.println(deliveryAddress);
+    public Flipkart(String productName)
+    {
+        System.out.println("Product name:" + productName);
+        System.out.println("Details 2nd");
+    }
+
+    public Flipkart(String productName, int productId)
+    {
+        System.out.println("Product name:" + productName);
+        System.out.println("Product Id:" + productId);
+        System.out.println("Details 3rd");
+    }
+
+    public Flipkart(String productName, int productId, double price) 
+    {
+        System.out.println("Product name:" + productName);
+        System.out.println("Product Id:" + productId);
+        System.out.println("Price:" + price);
+        System.out.println("Details 4th");
+    }
+
+    public Flipkart(String productName, int productId, double price, int quantity) 
+    {
+        System.out.println("Product name:" + productName);
+        System.out.println("Product Id:" + productId);
+        System.out.println("Price:" + price);
+        System.out.println("Quantity:" + quantity);
+        System.out.println("Details 5th");
     }
 }
