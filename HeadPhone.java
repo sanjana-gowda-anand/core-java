@@ -1,31 +1,53 @@
-class HeadPhone {
-    public static void main(String[] args) {
-	
-	 System.out.println("Headphone");
-	 System.out.println("---FEATURES---");
-	 System.out.println("Comfort");
-	 System.out.println("Connectivity");
-	 System.out.println("Sound quality");
+class Headphone {
 
-       byte warranty = 1;
-        short batteryLife = 30;
-        int price = 2500;
-        long serialNo = 776655443322L;
+    String brandName;
+    int modelNumber;
+    double price;
+	char type;
+    boolean isWireless;
 
-        float weight = 250.5f;
-        double frequencyRange = 20.5;
+    public Headphone() 
+    {
+        this("Sony", 101, 2999.99,true);
+        System.out.println("Details 1st");
+    }
 
-        char type = 'W'; // W for Wireless
-        boolean noiseCancellation = true;
+    public Headphone(String brandName)
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Details 2nd");
+    }
 
-        System.out.println("Headphone Details:");
-        System.out.println("Warranty: " + warranty);
-        System.out.println("Battery Life: " + batteryLife);
-        System.out.println("Price: " + price);
-        System.out.println("Serial No: " + serialNo);
-        System.out.println("Weight: " + weight);
-        System.out.println("Frequency Range: " + frequencyRange);
-        System.out.println("Type: " + type);
-        System.out.println("Noise Cancellation: " + noiseCancellation);
+    public Headphone(String brandName, int modelNumber)
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Model Number:" + modelNumber);
+        System.out.println("Details 3rd");
+    }
+
+    public Headphone(String brandName, int modelNumber, double price) 
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Model Number:" + modelNumber);
+        System.out.println("Price:" + price);
+        System.out.println("Details 4th");
+    }
+
+    public Headphone(String brandName, int modelNumber, double price, boolean isWireless) 
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Model Number:" + modelNumber);
+        System.out.println("Price:" + price);
+        System.out.println("Wireless:" + isWireless);
+        System.out.println("Details 5th");
+    }
+	 public Headphone(String brandName, int modelNumber, double price, boolean isWireless,char type) 
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Model Number:" + modelNumber);
+        System.out.println("Price:" + price);
+        System.out.println("Wireless:" + isWireless);
+		System.out.println("Type:" + type);
+        System.out.println("Details 6th");
     }
 }

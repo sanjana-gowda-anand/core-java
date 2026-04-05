@@ -1,23 +1,58 @@
-class Zomato 
-{
+class Zomato {
+
     String restaurantName;
     int orderId;
-    String foodItem;
-    double price;
+    boolean isDelivered;
+	int quantity;
+	char type;
 
-    public Zomato(String restaurantName,int orderId,String foodItem,double price)
+
+    public Zomato() 
 	{
-        this.restaurantName=restaurantName;
-        this.orderId=orderId;
-        this.foodItem=foodItem;
-        this.price=price;
+		this("KFC",101,true,80);
+	 System.out.println("Details 1st");
+    }
+	public Zomato(String restaurantName)
+	{
+        	 System.out.println("Restaurant name:"+restaurantName);
+			 System.out.println("Details 2nd");
+
+    }
+	public Zomato(String restaurantName,int orderId)
+	{
+		      System.out.println("Restaurant name:"+restaurantName);
+        	 System.out.println("Order Id:"+orderId);
+	 System.out.println("Details 3rd");
+
+    }
+	
+    public Zomato(String restaurantName,int orderId,boolean isDelivered) 
+	{
+		System.out.println("Restaurant name:"+restaurantName);
+        System.out.println("Order Id:"+orderId);
+		System.out.println("Delivered:"+isDelivered);
+        	 System.out.println("Details 4th");
+
+    }
+	 public Zomato(String restaurantName,int orderId,boolean isDelivered,int quantity) 
+	{
+		System.out.println("Restaurant name:"+restaurantName);
+        System.out.println("Order Id:"+orderId);
+		System.out.println("Delivered:"+isDelivered);
+        System.out.println("Quantity:"+quantity);
+			 System.out.println("Details 5th");
+
+    }
+public Zomato(String restaurantName,int orderId,boolean isDelivered,int quantity,char type) 
+	{
+		System.out.println("Restaurant name:"+restaurantName);
+        System.out.println("Order Id:"+orderId);
+		System.out.println("Delivered:"+isDelivered);
+        System.out.println("Quantity:"+quantity);
+		System.out.println("Type:"+type);
+	    System.out.println("Details 6th");
+
     }
 
-    public void show() 
-	{
-        System.out.println(restaurantName);
-        System.out.println(orderId);
-        System.out.println(foodItem);
-        System.out.println(price);
-    }
+    
 }

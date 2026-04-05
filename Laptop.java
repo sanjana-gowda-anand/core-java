@@ -1,32 +1,53 @@
 class Laptop {
-    public static void main(String[] args) {
-	 
-	 System.out.println("LAPTOP");
-	 System.out.println("---FEATURES---");
-	 System.out.println("High quality display");
-	 System.out.println("RAM and SSD");
-	 System.out.println("Long battery life");
-	 System.out.println("Powerfull Processor");
 
-        byte warranty = 2;
-        short ram = 16;
-        int price = 60000;
-        long serial = 12345678901L;
+    String brandName;
+    String processor;
+    int ram;
+    double price;
+	boolean isTouchScreen;
 
-        float weight = 1.8f;
-        double screenSize = 15.6;
+    public Laptop() 
+    {
+        this("Dell", "i5", 8);
+        System.out.println("Details 1st");
+    }
 
-        char grade = 'B';
-        boolean available = true;
+    public Laptop(String brandName)
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Details 2nd");
+    }
 
-        System.out.println("Laptop Details:");
-        System.out.println("Warranty: " + warranty);
-        System.out.println("RAM: " + ram);
-        System.out.println("Price: " + price);
-        System.out.println("Serial: " + serial);
-        System.out.println("Weight: " + weight);
-        System.out.println("Screen Size: " + screenSize);
-        System.out.println("Grade: " + grade);
-        System.out.println("Available: " + available);
+    public Laptop(String brandName, String processor)
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Processor:" + processor);
+        System.out.println("Details 3rd");
+    }
+
+    public Laptop(String brandName, String processor, int ram) 
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Processor:" + processor);
+        System.out.println("RAM:" + ram + "GB");
+        System.out.println("Details 4th");
+    }
+
+    public Laptop(String brandName, String processor, int ram, double price) 
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Processor:" + processor);
+        System.out.println("RAM:" + ram + "GB");
+        System.out.println("Price:" + price);
+        System.out.println("Details 5th");
+    }
+	public Laptop(String brandName, String processor, int ram, double price,boolean isTouchScreen) 
+    {
+        System.out.println("Brand name:" + brandName);
+        System.out.println("Processor:" + processor);
+        System.out.println("RAM:" + ram + "GB");
+        System.out.println("Price:" + price);
+		System.out.println("Touch Screen:" +isTouchScreen );
+        System.out.println("Details 6th");
     }
 }

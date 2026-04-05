@@ -5,14 +5,9 @@ class Uber {
     boolean isBooked;
     double fare;
 
-    public Uber(String driverName) {
-        this.driverName = driverName;
-    }
+    public Uber() {
+	  System.out.println("Details");
 
-    public Uber(String driverName,int rideId,boolean isBooked) {
-        this.driverName=driverName;
-        this.rideId=rideId;
-        this.isBooked=isBooked;
     }
 
     public Uber(String driverName,int rideId,boolean isBooked,double fare) {

@@ -1,24 +1,10 @@
 class LaptopRunner {
+    public static void main(String[] args) {
 
-    public static void main(String[] args) 
-	{
-
-        Laptop.checkLaptopIsOnOrOff();
-
-        Laptop.turnOnLaptop();
-
-        Laptop.checkLaptopIsOnOrOff();
-
-        int battery = Laptop.getBatteryPercentage();
-        System.out.println("Battery Percentage is: " + battery);
-		System.out.println("***********INCECREASE**************");
-
-		System.out.println("****************"+Laptop.increaseBattery());
-		System.out.println("****************"+Laptop.increaseBattery());
-		System.out.println("****************"+Laptop.increaseBattery());
-		System.out.println("***********DECECREASE**************");
-		System.out.println("****************"+Laptop.decreaseBattery());
-		System.out.println("****************"+Laptop.decreaseBattery());
-
+      Laptop l1=new  Laptop();
+      Laptop l2=new Laptop();
+	  Laptop l3=new Laptop();
+      Laptop l4=new Laptop();
+	  Laptop l5=new Laptop();
     }
 }

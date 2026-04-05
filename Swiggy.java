@@ -5,14 +5,8 @@ class Swiggy {
     boolean isDelivered;
     int quantity;
 
-    public Swiggy(String restaurantName) {
-        this.restaurantName=restaurantName;
-    }
-
-    public Swiggy(String restaurantName, int orderId, boolean isDelivered) {
-        this.restaurantName=restaurantName;
-        this.orderId=orderId;
-        this.isDelivered=isDelivered;
+    public Swiggy() {
+	 System.out.println("Details");
     }
 
     public Swiggy(String restaurantName, int orderId, boolean isDelivered, int quantity) {
