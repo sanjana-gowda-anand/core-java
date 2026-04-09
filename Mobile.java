@@ -1,12 +1,12 @@
-class Laptop {
+class Mobile {
 
     public static void main(String[] args) {
 
-        String[] brands = {"Dell","HP","Lenovo","Asus","Acer","Apple","MSI","Samsung","LG","Sony","Toshiba","Microsoft","Razer","Huawei","Xiaomi"};
-        String[] processors = {"i3","i5","i7","i9","Ryzen3","Ryzen5","Ryzen7","Ryzen9","M1","M2","Pentium","Celeron","Snapdragon","Xeon","CoreUltra"};
-        String[] ram = {"4GB","8GB","16GB","32GB","64GB","128GB","2GB","6GB","12GB","24GB","48GB","96GB","LPDDR4","LPDDR5","DDR5"};
-        String[] storage = {"256GB SSD","512GB SSD","1TB SSD","2TB SSD","500GB HDD","1TB HDD","2TB HDD","128GB SSD","4TB SSD","8TB HDD","NVMe","SATA","Hybrid","External","Cloud"};
-        String[] features = {"TouchScreen","BacklitKeyboard","Fingerprint","FaceUnlock","HDDisplay","FHDDisplay","4KDisplay","Gaming","Lightweight","Convertible","FastCharging","WiFi6","Bluetooth","Thunderbolt","Webcam"};
+        String[] brands = {"Samsung","Apple","OnePlus","Xiaomi","Realme","Oppo","Vivo","Motorola","Nokia","Google","Honor","Huawei","Asus","Sony","Infinix"};
+        String[] processors = {"Snapdragon 8","Snapdragon 7","Snapdragon 6","Dimensity 9000","Dimensity 8000","Dimensity 700","A15 Bionic","A16 Bionic","A17 Bionic","Exynos 2100","Exynos 2200","Helio G95","Helio G99","Tensor G2","Tensor G3"};
+        String[] ram = {"2GB","4GB","6GB","8GB","12GB","16GB","18GB","24GB","LPDDR4","LPDDR5","LPDDR5X","3GB","5GB","10GB","20GB"};
+        String[] storage = {"32GB","64GB","128GB","256GB","512GB","1TB","UFS2.1","UFS3.0","UFS3.1","UFS4.0","Expandable","NonExpandable","Cloud","Hybrid","Internal"};
+        String[] features = {"5G","4G","DualSIM","TripleCamera","QuadCamera","AMOLED","OLED","LCD","FastCharging","WirelessCharging","Fingerprint","FaceUnlock","Waterproof","Gaming","AI Camera"};
 
         System.out.println("Brands");
 
